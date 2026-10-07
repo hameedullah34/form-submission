@@ -22,6 +22,4 @@ app.post("/api/submit", async (req, res) => {
 	}
 });
 
-app.listen(port, () => {
-	console.log(`App is running on the port ${port}`);
-});
+export default app;
