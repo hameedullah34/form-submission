@@ -11,9 +11,9 @@ connectDB();
 
 app.post("/api/submit", async (req, res) => {
 	try {
-		const projectSubmissions = await projectSubmissions.create(req.body);
+		const submissions = await projectSubmissions.create(req.body);
 
-		console.log(projectSubmissions);
+		console.log(submissions);
 
 		res.json({ message: "Data saved successfully" });
 	} catch (error) {
